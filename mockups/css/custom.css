@@ -1,0 +1,57 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background-image: url('../img/bg.jpg');
+  background-repeat: repeat;
+}
+
+p {
+	line-height: 1em;
+}
+
+.icon-2x {
+	font-size: 2em;
+}
+
+.icon-20x {
+  font-size: 20em;
+}
+
+.tagline {
+  padding-top: 80px; }
+
+#btn-settings {
+  padding-right: 15px !important;
+  padding-bottom: 20px !important;
+}
+
+.question-box {
+	min-height: 8em;
+}
+
+.star-box {
+	text-align: center;
+}
+
+.star-num {
+	font-size: 2em;
+}
+
+.star-text {
+	font-size: 1.1em;
+}
+
+.star-icon{
+	font-size: 2em;
+}
+
+.question-content {
+
+}
+
+.question-text {
+	font-size: 1.5em;
+}
+
+.question-info {
+
+}

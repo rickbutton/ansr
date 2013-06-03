@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ansr - An Online Interactive Q and A Session for Events</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" />
+  	<link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="#">Ansr</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-form">
+            <a class="button" href="#">Sign In</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1 class="docs header"><a href="#">BoilerMake</a> Airbnb Talk</h1>
+    </div>
+
+  </div>
+
+
+  <!-- Content -->
+  <div class="row">
+    <!-- events -->
+    <div class="large-8 columns">
+      <h3>Current Questions</h3>
+
+      <div class="row">
+        <div class="large-12 columns">
+
+          <div class="panel question-box">
+            <div class="small-2 columns star-box">
+              <span class="star-num">55</span>
+              <br />
+              <span class="star-text">stars</span>
+              <br />
+              <i class="icon-star-empty star-icon"></i> <!-- will need to use jQuery to change class to icon-star on hover -->
+            </div>
+            <div class="small-10 columns question-content">
+              <p class="question-text">Why can't we have something better than lorem ipsum?</p>
+              <p class="question-info">Asked by <a href="#">Rick Button</a> at 11:37pm yesterday.</p>
+            </div>
+          </div>
+
+          <div class="panel question-box">
+            <div class="small-2 columns star-box">
+              <span class="star-num">35</span>
+              <br />
+              <span class="star-text">stars</span>
+              <br />
+              <i class="icon-star-empty star-icon"></i>
+            </div>
+            <div class="small-10 columns question-content">
+              <p class="question-text">How does the cow go moo?</p>
+              <p class="question-info">Asked by <a href="#">Kirby Kohlmorgen</a> at 10:54pm yesterday.</p>
+            </div>
+          </div>
+
+          <div class="panel question-box">
+            <div class="small-2 columns star-box">
+              <span class="star-num">12</span>
+              <br />
+              <span class="star-text">stars</span>
+              <br />
+              <i class="icon-star-empty star-icon"></i>
+            </div>
+            <div class="small-10 columns question-content">
+              <p class="question-text">How did you guys develop the backend for Airbnb?</p>
+              <p class="question-info">Asked by <a href="#">Kirby Kohlmorgen</a> at 12:11am today.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <h3>Answered Questions</h3>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+          <div class="panel">
+            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+          <div class="panel">
+            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+          <div class="panel">
+            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+          <div class="panel">
+            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end events -->
+
+    <!-- sidebar -->
+    <div class="large-4 columns">
+      <h4>Getting Started</h4>
+      <p>Make sure you don't ask questions that make you look like an asshole and shit like that.</p>
+
+      <h4>Other Resources</h4>
+      <p>Once you've exhausted the fun in this document, you should check out:</p>
+      <ul class="disc">
+        <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
+        <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+        <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+      </ul>
+    </div> <!-- end sidebar -->
+  </div> <!-- end content -->
+
+  <!-- footer -->
+  <div class="row">
+    <div class="large-12 columns">
+      <p>Ansr - Copyright 2013 | Created with love by Rick Button and Kirby Kohlmorgen</p>
+    </div>
+  </div> <!-- end footer -->
+
+  </body>
+  <script src="/assets/jquery.js?body=1"></script>
+	<script src="js/jquery_ujs.js?body=1"></script>
+	<script src="js/foundation/foundation.js?body=1"></script>
+	<script src="js/foundation/foundation.alerts.js?body=1"></script>
+	<script src="js/foundation/foundation.clearing.js?body=1"></script>
+	<script src="js/foundation/foundation.cookie.js?body=1"></script>
+	<script src="js/foundation/foundation.dropdown.js?body=1"></script>
+	<script src="js/foundation/foundation.forms.js?body=1"></script>
+	<script src="js/foundation/foundation.joyride.js?body=1"></script>
+	<script src="js/foundation/foundation.magellan.js?body=1"></script>
+	<script src="js/foundation/foundation.orbit.js?body=1"></script>
+	<script src="js/foundation/foundation.placeholder.js?body=1"></script>
+	<script src="js/foundation/foundation.reveal.js?body=1"></script>
+	<script src="js/foundation/foundation.section.js?body=1"></script>
+	<script src="js/foundation/foundation.tooltips.js?body=1"></script>
+	<script src="js/foundation/foundation.topbar.js?body=1"></script>
+	<script src="js/foundation/foundation.interchange.js?body=1"></script>
+	<script src="js/foundation/index.js?body=1"></script>
+	<script src="js/turbolinks.js?body=1"></script>
+	<script src="js/root.js?body=1"></script>
+	<script src="js/angular.js?body=1"></script>
+	<script src="js/angular-bootstrap.js?body=1"></script>
+	<script src="js/application.js?body=1"></script>
+</html>
