@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en" ng-app="Ansr"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en" ng-app="Ansr"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en" ng-app="Ansr"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" ng-app="Ansr"> <!--<![endif]-->
   <head>
   	<meta charset="utf-8" />
 
@@ -22,18 +22,16 @@
   </head>
 
   <body>
+
     <nav class="top-bar">
     <ul class="title-area">
-      <!-- Title Area -->
       <li class="name">
       <h1><a href="#">Ansr</a></h1>
       </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
 
     <section class="top-bar-section">
-    <!-- Right Nav Section -->
     <ul class="left">
       <li><input type="text" placeholder="Search"></li>
       <li><span class="postfix button">Search</span></li>
@@ -51,8 +49,7 @@
     </section>
     </nav>    
 
-    <%= yield %>
-
+    <div ng-view></div>
     
     <%= javascript_include_tag "application" %>
   </body>

@@ -1,0 +1,8 @@
+window.App = angular.module('Ansr', ['eventFilters', 'ngResource']).config(
+  [
+    '$routeProvider', ($routeProvider) ->
+      $routeProvider.when("/events/:id", 
+        templateUrl: '<%= asset_path 'event-detail.html' %>',
+        controller: 'EventDetailCtrl')
+  ]
+)

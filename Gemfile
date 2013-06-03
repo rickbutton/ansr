@@ -46,6 +46,7 @@ end
 gem 'angularjs-rails'
 gem "less-rails" 
 gem 'zurb-foundation'
+gem 'coffee-script-source', '1.5.0' #Force for error line numbers
 
 # Testing
 gem 'rspec'
