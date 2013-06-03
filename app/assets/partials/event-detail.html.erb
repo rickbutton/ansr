@@ -1,0 +1,14 @@
+<div ng-controller="EventDetailCtrl">
+  <div class="row">
+    <div class="large-6 columns text-center">
+      <h1>{{event.name}}</h1>
+      <p>{{event.summary}}</p>
+      <p>From :{{event.start | simpleDate}}</p>
+      <p>To: {{event.end | simpleDate}}</p>
+      <p>{{event.test}}</p>
+    </div>
+    <div class="large-6 columns">
+      <img src="http://placehold.it/350x350"></img>
+    </div>
+  </div>
+</div>

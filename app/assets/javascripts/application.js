@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require_tree .
+//= require moment
 //= require angular
+//= require angular-resource
 //= require angular-bootstrap
-
+//= require app
+//= require_tree ./angular
 $(function(){ $(document).foundation(); });

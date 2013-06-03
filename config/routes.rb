@@ -49,5 +49,8 @@ Ansr::Application.routes.draw do
   #   end
   
   root to: "root#index"
+  namespace :api do
+    resources :events
+  end
 end
 
