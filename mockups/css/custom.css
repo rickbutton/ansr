@@ -16,12 +16,33 @@ p {
   font-size: 20em;
 }
 
+ul.sign-in {
+	width: 15em;
+	background: black !important;
+}
+
+ul.sign-in div {
+	margin-bottom: 10px;
+}
+
+.has-button {
+	margin-bottom: 10px;
+}
+
 .tagline {
   padding-top: 80px; }
 
 #btn-settings {
   padding-right: 15px !important;
   padding-bottom: 20px !important;
+}
+
+.talk-header {
+	float: left;
+}
+
+.talk-question-button {
+	margin-top: 20px;
 }
 
 .question-box {
@@ -54,4 +75,37 @@ p {
 
 .question-info {
 
+}
+
+.user-img {
+	background: #2d3538;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 25px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-background-size: 100px 100px;
+	-moz-background-size: 100px 100px;
+	-o-background-size: 100px 100px;
+	background-size: 100px 100px;
+}
+
+.user-header {
+	float: left;
+}
+
+.user-name {
+	line-height: 1em;
+}
+
+.user-school {
+	line-height: 1em;
+}
+
+.user-header-questions {
+	margin-top: 30px; /*temp fix*/
 }

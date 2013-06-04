@@ -4,52 +4,70 @@
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-  	<meta charset="utf-8" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<!-- Uncomment to make IE8 render like IE7 -->
-  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+  <title>Ansr - An Online Interactive Q and A Session for Events</title>
 
-  	<!-- Set the viewport width to device width for mobile -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
 
-    <title>Ansr - An Online Interactive Q and A Session for Events</title>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1><a href="#">Ansr</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
 
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" />
-  	<link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-  </head>
+    <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
 
-  <body>
-    <nav class="top-bar">
-      <ul class="title-area">
-        <!-- Title Area -->
-        <li class="name">
-          <h1><a href="#">Ansr</a></h1>
-        </li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
+      <li class="divider hide-for-small"></li>
+      <li class="has-dropdown"><a href="#">Sign In</a>
 
-      <section class="top-bar-section">
-
-
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="has-form">
-            <a class="button" href="#">Sign In</a>
-          </li>
+        <ul class="sign-in dropdown">
+          <ul>
+            <div class="column"><li class="username"><form><input type="text" placeholder="Username" /></li></div>
+            <div class="column"><li><input type="password" placeholder="Password"></li></div>
+            <div class="small-6 column"><li class="has-button"><a class="small button success" href="#">Sign In!</a></form></li></div>
+            <div class="small-6 column"><li class="has-button"><a class="small button" href="#">Sign Up!</a></form></li></div>
+          </ul>
         </ul>
-      </section>
-    </nav>
 
-  <div class="row">
+      </li>
+
+    </ul>
+
+    </section>
+    
+  </nav>
+
+    <div class="row">
     <div class="large-12 columns">
-      <h1 class="docs header"><a href="#">BoilerMake</a> Airbnb Talk</h1>
+      <div class="talk-header">
+        <h1><a href="#">BoilerMake</a> Airbnb Talk</h1>
+      </div>
+      <div class="right">
+        <a href="#" data-reveal-id="myModal" class="large button talk-question-button">Ask a Question!</a>
+      </div>
     </div>
 
   </div>
 
+  <div id="myModal" class="reveal-modal">
+    <h2>Ask a Question!</h2>
+    <textarea placeholder="Enter you question here..."></textarea>
+    <a class="close-reveal-modal">&#215;</a>
+    <a href="#" class="medium button question-submit">Submit!</a> <!-- broken, should close window -->
+  </div>
 
   <!-- Content -->
   <div class="row">
@@ -97,7 +115,7 @@
               <i class="icon-star-empty star-icon"></i>
             </div>
             <div class="small-10 columns question-content">
-              <p class="question-text">How did you guys develop the backend for Airbnb?</p>
+              <p class="question-text">How did you guys develop the backend for Airbnb? Also, this...</p> <!-- example of long question functionality -->
               <p class="question-info">Asked by <a href="#">Kirby Kohlmorgen</a> at 12:11am today.</p>
             </div>
           </div>
@@ -146,35 +164,40 @@
     </div> <!-- end sidebar -->
   </div> <!-- end content -->
 
-  <!-- footer -->
-  <div class="row">
-    <div class="large-12 columns">
-      <p>Ansr - Copyright 2013 | Created with love by Rick Button and Kirby Kohlmorgen</p>
-    </div>
-  </div> <!-- end footer -->
 
-  </body>
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
   <script src="/assets/jquery.js?body=1"></script>
-	<script src="js/jquery_ujs.js?body=1"></script>
-	<script src="js/foundation/foundation.js?body=1"></script>
-	<script src="js/foundation/foundation.alerts.js?body=1"></script>
-	<script src="js/foundation/foundation.clearing.js?body=1"></script>
-	<script src="js/foundation/foundation.cookie.js?body=1"></script>
-	<script src="js/foundation/foundation.dropdown.js?body=1"></script>
-	<script src="js/foundation/foundation.forms.js?body=1"></script>
-	<script src="js/foundation/foundation.joyride.js?body=1"></script>
-	<script src="js/foundation/foundation.magellan.js?body=1"></script>
-	<script src="js/foundation/foundation.orbit.js?body=1"></script>
-	<script src="js/foundation/foundation.placeholder.js?body=1"></script>
-	<script src="js/foundation/foundation.reveal.js?body=1"></script>
-	<script src="js/foundation/foundation.section.js?body=1"></script>
-	<script src="js/foundation/foundation.tooltips.js?body=1"></script>
-	<script src="js/foundation/foundation.topbar.js?body=1"></script>
-	<script src="js/foundation/foundation.interchange.js?body=1"></script>
-	<script src="js/foundation/index.js?body=1"></script>
-	<script src="js/turbolinks.js?body=1"></script>
-	<script src="js/root.js?body=1"></script>
-	<script src="js/angular.js?body=1"></script>
-	<script src="js/angular-bootstrap.js?body=1"></script>
-	<script src="js/application.js?body=1"></script>
+  <script src="js/jquery_ujs.js?body=1"></script>
+  <script src="js/foundation/foundation.js?body=1"></script>
+  <script src="js/foundation/foundation.alerts.js?body=1"></script>
+  <script src="js/foundation/foundation.clearing.js?body=1"></script>
+  <script src="js/foundation/foundation.cookie.js?body=1"></script>
+  <script src="js/foundation/foundation.dropdown.js?body=1"></script>
+  <script src="js/foundation/foundation.forms.js?body=1"></script>
+  <script src="js/foundation/foundation.joyride.js?body=1"></script>
+  <script src="js/foundation/foundation.magellan.js?body=1"></script>
+  <script src="js/foundation/foundation.orbit.js?body=1"></script>
+  <script src="js/foundation/foundation.placeholder.js?body=1"></script>
+  <script src="js/foundation/foundation.reveal.js?body=1"></script>
+  <script src="js/foundation/foundation.section.js?body=1"></script>
+  <script src="js/foundation/foundation.tooltips.js?body=1"></script>
+  <script src="js/foundation/foundation.topbar.js?body=1"></script>
+  <script src="js/foundation/foundation.interchange.js?body=1"></script>
+  <script src="js/foundation/index.js?body=1"></script>
+  <script src="js/turbolinks.js?body=1"></script>
+  <script src="js/root.js?body=1"></script>
+  <script src="js/angular.js?body=1"></script>
+  <script src="js/angular-bootstrap.js?body=1"></script>
+  <script src="js/application.js?body=1"></script>
+
+  <script>
+  $(document).foundation();
+  </script>
+</body>
+
 </html>
